@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+   
 }
+
+
 h1{
     font-size: 36px;
     line-height: 100%;
@@ -28,7 +31,7 @@ p{
 .nav{
     height: 100px;
     width: 100%;
-    
+    padding:2px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -85,13 +88,12 @@ p{
     
 }
 .toggle{
-    
     background-color: black !important;
 }
 .inactive{
     border: 3px solid black;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: transparent ;
 }
@@ -107,8 +109,24 @@ p{
 }
 .content{
     height: 100%;
-    width: 300px;
-    
+    width: 300px; 
+}
 
+.dark-mode  div{
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+.dark-mode .inactive{
+    border:1px solid white;
+
+}
+
+.dark-mode .toggle{
+    background-color: white !important; 
+}
+.socIcon{
+    padding: 7px 7px 0px 7px;
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 50%;
 }
 

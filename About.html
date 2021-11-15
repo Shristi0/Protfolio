@@ -8,23 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="sad
+    ">
         <div class="nav">
-            <a href="https://www.behance.net/"> <img src="./image/behance.png" alt=""> </a>
-            <a href="https://dribbble.com/"> <img src="./image/dribble.png" alt=""> </a>
-            <a href="https://github.com/"> <img src="./image/github.png" alt=""> </a>
+            <div class="socIcon"><a href="https://www.behance.net/"> <img src="./image/behance.png" alt=""> </a></div>
+            <div class="socIcon"><a href="https://dribbble.com/"> <img src="./image/dribble.png" alt=""> </a></div>
+            <div class="socIcon"><a href="https://github.com/"> <img src="./image/github.png" alt=""> </a></div>
         </div>
         <div class="main">
             <div class="left">
-                <img src="./image/category.png" alt="">
+                <button onclick="Theme()"><img src="./image/category.png" alt=""></button>
+                
             </div>
             <div class="center">
                 <div class="profile">
-                    
                 </div>
                 <div class="content">
-                    <h1>About Page</h1>
-                    <h3>Shristi Shrestha</h3>
+                    <h1 id="h1">About Page</h1>
+                    <h3 id="h3">Shristi Shrestha</h3>
                     <p>Lorem ipsum dolor sit amet consectetur ad sit nisi, quidem sint esse temporibus laudantium impedit ea sequi tempore accu fuga ex nostrum minus!</p>
                 </div>
             </div>
@@ -36,11 +37,17 @@
             </div>
         </div>
         <div class="footer">
-            <a href="https://www.linkedin.com"> <img src="./image/linkedin.png" alt=""> </a>
-            <a href="https://www.facebook.com"> <img src="./image/FACEBOOK.png" alt=""> </a>
-            <a href="https://www.instagram.com"> <img src="./image/INSTAGRAM.png" alt=""> </a> 
+            <div class="socIcon"><a href="https://www.linkedin.com"> <img src="./image/linkedin.png" alt=""> </a></div>
+            <div class="socIcon"><a href="https://www.facebook.com"> <img src="./image/FACEBOOK.png" alt=""> </a></div>
+            <div class="socIcon"><a href="https://www.instagram.com"> <img src="./image/INSTAGRAM.png" alt=""> </a></div>
         </div>
     </div>
+    <script>
+        function Theme(){
+            document.body.classList.toggle("dark-mode");
+              
+        }
+    </script>
     
 </body>
 </html>
